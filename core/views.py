@@ -1,8 +1,19 @@
 from django.http.response import HttpResponse
 from django.shortcuts import render
 from .models.customers import Customer
+from .models.transactions import Transaction
+from datetime import datetime, date
+
 
 template_name = "transfer.html"
+
+
+def transaction_id_generator():
+    today_date = str(date.today()).replace("-", "")
+    time_now = str(datetime.now().strftime(
+        "%H:%M:%S")).replace(":", "")
+    txn_id = "TSF"+today_date + time_now
+    return txn_id
 
 # Create your views here.
 
@@ -45,6 +56,9 @@ def transfer(request):
                     print(sender.account_balance, receiver.account_balance)
                     sender.save()
                     receiver.save()
+                    new_txn = Transaction(
+                        debited_from=sender, credited_to=receiver, amount=amount, transaction_id=transaction_id_generator(), transaction_status="SUCCESS")
+                    new_txn.save()
                     return render(request, template_name, {"message": "Transaction successful."})
                 else:
                     return render(request, template_name, {"error": "Your account doesn't have sufficient balance."})

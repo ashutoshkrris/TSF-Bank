@@ -1,161 +1,159 @@
-{% extends 'base.html' %}{% load static %} {% block title %}About Us | TSF World Bank{% endblock %} {% block content %}
+{% extends 'base.html' %}{% load static %} {% block title %}About Us | TSF World
+Bank{% endblock %} {% block content %}
 
-    <div class="inner-banner"></div>
-    <section class="w3l-breadcrumb">
-      <div class="container">
-        <ul class="breadcrumbs-custom-path">
-          <li><a href="{% url 'home' %}">Home</a></li>
-          <li class="active">
-            <span class="fa fa-arrow-right mx-2" aria-hidden="true"></span>
-            About Us
-          </li>
-        </ul>
-      </div>
-    </section>
+<div class="inner-banner"></div>
+<section class="w3l-breadcrumb">
+  <div class="container">
+    <ul class="breadcrumbs-custom-path">
+      <li><a href="{% url 'home' %}">Home</a></li>
+      <li class="active">
+        <span class="fa fa-arrow-right mx-2" aria-hidden="true"></span>
+        About Us
+      </li>
+    </ul>
+  </div>
+</section>
 
-    <!-- services page block grids -->
-    <section class="w3l-services py-5">
-      <div class="container py-lg-5 py-md-4 py-2">
-        <div class="row bottom-ab-grids">
-          <div class="col-lg-6 bottom-ab-left align-self">
-            <h3 class="title-big mb-4">
-              We have created Professional service for our Visitors
-            </h3>
-            <p class="">
-              Lorem ipsum dolor sit amet elit. hic odio tenetur. ante ipsum
-              primis in faucibus orci luctus et ultrices posuere cubilia acere
-              aperiam sequi optio consectetur adipisicing dolor et amet.
-            </p>
-            <div class="cont-4 mt-lg-5 mt-4">
-              <div class="list mb-4">
-                <span class="fa fa-check"></span>
-                <div class="list-info">
-                  <h4>Create a community</h4>
-                  <p>
-                    Lorem ipsum dolor sit amet elit. Iure, corporis orci luctus
-                    et ultrices posuere cubilia acere dolor et amet.
-                  </p>
-                </div>
-              </div>
-              <div class="list">
-                <span class="fa fa-check"></span>
-                <div class="list-info">
-                  <h4>Perfect workspace</h4>
-                  <p>
-                    Lorem ipsum dolor sit amet elit. Iure, corporis orci luctus
-                    et ultrices posuere cubilia acere dolor et amet.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-6 bottom-right-grids mt-lg-0 mt-5">
-            <img
-              src="{% static 'assets/images/services.jpg' %}"
-              alt=""
-              class="radius-image img-fluid"
-            />
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- //services page block grids -->
-    <section class="w3l-content-4 py-5" id="features">
-      <div class="content-4-main py-lg-5 py-md-4 py-2">
-        <div class="container">
-          <div class="content-info-in row">
-            <div class="content-left col-lg-6">
-              <h3 class="title-small">Our Features</h3>
-              <h3 class="title-big">
-                We are here to Increase your Productivity.
-              </h3>
-              <p class="mt-4">
-                Phasellus lacinia id erat eu ullamcorper. Nunc id ipsum
-                fringilla, gravida felis vitae. Phasellus lacinia id, sunt in
-                culpa quis. lacinia. Lorem ipsum dolor, sit amet consectetur
-                init adipisicing elit. Eos, debitis. Quas minima sunt natus
-                tempore, maiores aliquid modi gravida felis vitae amet ad minus
-                libero.
+<!-- services page block grids -->
+<section class="w3l-services py-5">
+  <div class="container py-lg-5 py-md-4 py-2">
+    <div class="row bottom-ab-grids">
+      <div class="col-lg-6 bottom-ab-left align-self">
+        <h3 class="title-big mb-4">
+          We have created Professional service for our Visitors
+        </h3>
+        <p class="">
+          Lorem ipsum dolor sit amet elit. hic odio tenetur. ante ipsum primis
+          in faucibus orci luctus et ultrices posuere cubilia acere aperiam
+          sequi optio consectetur adipisicing dolor et amet.
+        </p>
+        <div class="cont-4 mt-lg-5 mt-4">
+          <div class="list mb-4">
+            <span class="fa fa-check"></span>
+            <div class="list-info">
+              <h4>Create a community</h4>
+              <p>
+                Lorem ipsum dolor sit amet elit. Iure, corporis orci luctus et
+                ultrices posuere cubilia acere dolor et amet.
               </p>
-              <a class="btn btn-style btn-primary mt-md-5 mt-4" href="#blog"
-                >Know More</a
-              >
             </div>
-            <div class="content-right col-lg-6 pl-lg-4 mt-lg-0 mt-md-5 mt-5">
-              <div class="row content4-right-grids mb-lg-5 mb-4">
-                <div class="col-2 content4-right-icon">
-                  <div class="content4-icon">
-                    <span class="fa fa-cogs"></span>
-                  </div>
-                </div>
-                <div class="col-10 content4-right-info">
-                  <h6><a href="#url">Innovative Approach</a></h6>
-                  <p>
-                    Lorem ipsum dolor sit amet, Ea illum facere aperiam sequi
-                    optio amet ad minus libero dolor et ut.
-                  </p>
-                </div>
-              </div>
-              <div class="row content4-right-grids mb-lg-5 mb-4">
-                <div class="col-2 content4-right-icon">
-                  <div class="content4-icon">
-                    <span class="fa fa-clock-o"></span>
-                  </div>
-                </div>
-                <div class="col-10 content4-right-info">
-                  <h6><a href="#url"> Quality time</a></h6>
-                  <p>
-                    Lorem ipsum dolor sit amet, Ea illum facere aperi amet sequi
-                    optio amet ad minus libero dolor et ut init amet int et
-                    ullam core et dolor sit amet ea set minet.
-                  </p>
-                </div>
-              </div>
-              <div class="row content4-right-grids">
-                <div class="col-2 content4-right-icon">
-                  <div class="content4-icon">
-                    <span class="fa fa-thumbs-up"></span>
-                  </div>
-                </div>
-                <div class="col-10 content4-right-info">
-                  <h6><a href="#url"> 24/7 Support</a></h6>
-                  <p>
-                    Lorem ipsum dolor sit amet, Ea illum facere aperiam sequi
-                    optio amet ad minus libero dolor et ut.
-                  </p>
-                </div>
-              </div>
+          </div>
+          <div class="list">
+            <span class="fa fa-check"></span>
+            <div class="list-info">
+              <h4>Perfect workspace</h4>
+              <p>
+                Lorem ipsum dolor sit amet elit. Iure, corporis orci luctus et
+                ultrices posuere cubilia acere dolor et amet.
+              </p>
             </div>
           </div>
         </div>
       </div>
-    </section>
+      <div class="col-lg-6 bottom-right-grids mt-lg-0 mt-5">
+        <img
+          src="{% static 'assets/images/services.jpg' %}"
+          alt=""
+          class="radius-image img-fluid"
+        />
+      </div>
+    </div>
+  </div>
+</section>
+<!-- //services page block grids -->
+<section class="w3l-content-4 py-5" id="features">
+  <div class="content-4-main py-lg-5 py-md-4 py-2">
+    <div class="container">
+      <div class="content-info-in row">
+        <div class="content-left col-lg-6">
+          <h3 class="title-small">Our Features</h3>
+          <h3 class="title-big">We are here to Increase your Productivity.</h3>
+          <p class="mt-4">
+            Phasellus lacinia id erat eu ullamcorper. Nunc id ipsum fringilla,
+            gravida felis vitae. Phasellus lacinia id, sunt in culpa quis.
+            lacinia. Lorem ipsum dolor, sit amet consectetur init adipisicing
+            elit. Eos, debitis. Quas minima sunt natus tempore, maiores aliquid
+            modi gravida felis vitae amet ad minus libero.
+          </p>
+          <a class="btn btn-style btn-primary mt-md-5 mt-4" href="#blog"
+            >Know More</a
+          >
+        </div>
+        <div class="content-right col-lg-6 pl-lg-4 mt-lg-0 mt-md-5 mt-5">
+          <div class="row content4-right-grids mb-lg-5 mb-4">
+            <div class="col-2 content4-right-icon">
+              <div class="content4-icon">
+                <span class="fa fa-cogs"></span>
+              </div>
+            </div>
+            <div class="col-10 content4-right-info">
+              <h6><a href="#url">Innovative Approach</a></h6>
+              <p>
+                Lorem ipsum dolor sit amet, Ea illum facere aperiam sequi optio
+                amet ad minus libero dolor et ut.
+              </p>
+            </div>
+          </div>
+          <div class="row content4-right-grids mb-lg-5 mb-4">
+            <div class="col-2 content4-right-icon">
+              <div class="content4-icon">
+                <span class="fa fa-clock-o"></span>
+              </div>
+            </div>
+            <div class="col-10 content4-right-info">
+              <h6><a href="#url"> Quality time</a></h6>
+              <p>
+                Lorem ipsum dolor sit amet, Ea illum facere aperi amet sequi
+                optio amet ad minus libero dolor et ut init amet int et ullam
+                core et dolor sit amet ea set minet.
+              </p>
+            </div>
+          </div>
+          <div class="row content4-right-grids">
+            <div class="col-2 content4-right-icon">
+              <div class="content4-icon">
+                <span class="fa fa-thumbs-up"></span>
+              </div>
+            </div>
+            <div class="col-10 content4-right-info">
+              <h6><a href="#url"> 24/7 Support</a></h6>
+              <p>
+                Lorem ipsum dolor sit amet, Ea illum facere aperiam sequi optio
+                amet ad minus libero dolor et ut.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
-    <section class="w3l-team py-5" id="team">
-      <div class="container py-lg-5 py-md-4 py-2">
-        <h3 class="title-big mb-md-5 mb-4 text-center">Meet our Team</h3>
-        <div class="row">
-          <div class="col-md-4 col-sm-6">
-            <div class="our-team">
-              <div class="pic">
-                <img
-                  src="{% static 'assets/images/t1.jpg' %}"
-                  alt="team member"
-                  class="img-fluid radius-image"
-                />
-              </div>
-              <div class="content">
-                <h3 class="title">Peter Johns</h3>
-                <span class="post">Financial Manager</span>
-                <ul class="social">
-                  <li><a href="#" class="fa fa-facebook"></a></li>
-                  <li><a href="#" class="fa fa-twitter"></a></li>
-                  <li><a href="#" class="fa fa-linkedin"></a></li>
-                </ul>
-              </div>
+  <section class="w3l-team py-5" id="team">
+    <div class="container py-lg-5 py-md-4 py-2">
+      <h3 class="title-big mb-md-5 mb-4 text-center">Meet our Developer</h3>
+      <div class="row justify-content-center">
+        <div class="col-md-4 col-sm-6">
+          <div class="our-team">
+            <div class="pic">
+              <img
+                src="{% static 'assets/images/developer.jpg' %}"
+                alt="team member"
+                class="img-fluid radius-image"
+              />
+            </div>
+            <div class="content">
+              <h3 class="title">Ashutosh Krishna</h3>
+              <span class="post">Backend Developer</span>
+              <ul class="social">
+                <li><a href="https://facebook.com/ashutoshkrris" class="fa fa-facebook"></a></li>
+                <li><a href="https://twitter.com/ashutoshkrris" class="fa fa-twitter"></a></li>
+                <li><a href="https://linkedin.com/in/ashutoshkrris" class="fa fa-linkedin"></a></li>
+              </ul>
             </div>
           </div>
         </div>
       </div>
-    </section>
-    {% endblock %}
+    </div>
+  </section>
+  {% endblock %}
