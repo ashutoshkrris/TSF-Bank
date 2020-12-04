@@ -1,0 +1,80 @@
+{% extends 'base.html' %}{% load static %} {% block title %}Sponsor | TSF World Bank{% endblock %} {% block content %}
+    
+    <div class="inner-banner"></div>
+    <section class="w3l-breadcrumb">
+      <div class="container">
+        <ul class="breadcrumbs-custom-path">
+          <li><a href="{% url 'home' %}">Home</a></li>
+          <li class="active">
+            <span class="fa fa-arrow-right mx-2" aria-hidden="true"></span>
+            Sponsor
+          </li>
+        </ul>
+      </div>
+    </section>
+
+     <!-- middle -->
+     <div class="middle py-5" id="call">
+      <div class="container py-lg-3">
+        <div class="welcome-left text-center py-md-5 py-3">
+          <h3 class="title-big">Want to sponsor us?</h3>
+          <h3 class="mt-4">
+            We are always delighted to welcome new sponsors
+          </h3>
+          <br />
+          <form>
+            <script
+              src="https://checkout.razorpay.com/v1/payment-button.js"
+              data-payment_button_id="pl_G8RLlezfAQ8A6P"
+            ></script>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- //middle -->
+    
+    <!-- /bottom-grids-->
+    <section class="w3l-bottom-grids-6 w3l-services py-5" id="services">
+      <div class="container py-lg-5 py-md-4">
+        <h6 class="title-small text-center">Our Sponsors</h6>
+        <h3 class="title-big mb-md-5 mb-4 text-center">
+          Look at some of our Sponsors
+        </h3>
+        <div class="grids-area-hny main-cont-wthree-fea row">
+          <div class="col-lg-4 col-md-6 grids-feature">
+            <div class="area-box">
+              <span class="fa fa-amazon mt-0"></span>
+              <h4><a href="#feature" class="title-head">Amazon</a></h4>
+              <p class="">
+                Amazon is an American multinational technology company based in Seattle, Washington, which focuses on e-commerce, cloud computing, digital streaming, and artificial intelligence.Amazon was founded by Jeff Bezos on July 5, 1994.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 grids-feature mt-md-0 mt-4">
+            <div class="area-box">
+              <span class="fa fa-windows mt-0"></span>
+              <h4>
+                <a href="#feature" class="title-head">Microsoft</a>
+              </h4>
+              <p class="">
+                Google is an American multinational technology company that specializes in Internet-related services and products, which include online advertising technologies, a search engine, cloud computing, software, and hardware. 
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 grids-feature mt-lg-0 mt-4">
+            <div class="area-box">
+              <span class="fa fa-google mt-0"></span>
+              <h4>
+                <a href="#feature" class="title-head">Google</a>
+              </h4>
+              <p class="">
+                Microsoft is an American multinational technology company with headquarters in Redmond, Washington. It develops, manufactures, licenses, supports, and sells computer software, consumer electronics, personal computers, and related services.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- //bottom-grids-->
+   
+    {% endblock %}

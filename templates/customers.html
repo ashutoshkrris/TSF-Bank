@@ -1,0 +1,44 @@
+{% extends 'base.html' %}{% load static %} {% block title %}Customers | TSF
+World Bank{% endblock %} {% block content %}
+
+<div class="inner-banner"></div>
+<section class="w3l-breadcrumb">
+  <div class="container">
+    <ul class="breadcrumbs-custom-path">
+      <li><a href="{% url 'home' %}">Home</a></li>
+      <li class="active">
+        <span class="fa fa-arrow-right mx-2" aria-hidden="true"></span>
+        Customers
+      </li>
+    </ul>
+  </div>
+</section>
+
+<section class="w3l-team py-5" id="team">
+  <div class="container py-lg-5 py-md-4 py-2">
+    <h3 class="title-big mb-md-5 mb-4 text-center">Our Valuable Customers</h3>
+    <table class="table table-striped text-center">
+      <thead>
+        <tr>
+          <th scope="col">A/C No.</th>
+          <th scope="col">Name</th>
+          <th scope="col">Email</th>
+          <th scope="col">Branch</th>
+          <th scope="col">Since</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for customer in customers %}
+        <tr>
+          <th scope="row">{{customer.account_number}}</th>
+          <td><a href="/customers/{{customer.account_number}}">{{customer.name}}</a></td>
+          <td>{{customer.email}}</td>
+          <td>{{customer.account_branch}}</td>
+          <td>{{customer.created_at}}</td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+</section>
+{% endblock %}

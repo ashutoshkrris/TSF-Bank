@@ -13,7 +13,8 @@ class AdminTransactions(admin.ModelAdmin):
     list_display = ['debited_from', 'credited_to', 'amount',
                     'transaction_id', 'transaction_date', 'transaction_status']
 
+
 admin.site.register(Customer, AdminCustomer)
-admin.site.register(Transaction,AdminTransactions)
+admin.site.register(Transaction, AdminTransactions)
 
 admin.site.site_header = 'TSF Bank Admin Panel'
