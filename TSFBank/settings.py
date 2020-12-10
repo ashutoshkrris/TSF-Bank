@@ -138,8 +138,8 @@ MEDIA_URL = '/customers/images/'
 MEDIA_ROOT = BASE_DIR
 
 CLOUDINARY_STORAGE = {
-    'CLOUD_NAME': 'hffs2ny9n',
-    'API_KEY': '727749715453349',
-    'API_SECRET': 'm2Doyco7U6Ti7TUlBzZo8guZc1U',
+    'CLOUD_NAME': config("CLOUD_NAME"),
+    'API_KEY': config("API_KEY"),
+    'API_SECRET': config("API_SECRET"),
 }
 DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
