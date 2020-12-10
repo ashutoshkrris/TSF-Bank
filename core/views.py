@@ -1,4 +1,3 @@
-from django.http.response import HttpResponse
 from django.shortcuts import render
 from .models.customers import Customer
 from .models.transactions import Transaction
@@ -15,9 +14,8 @@ def transaction_id_generator():
     txn_id = "TSF"+today_date + time_now
     return txn_id
 
+
 # Create your views here.
-
-
 def home(request):
     return render(request, "index.html")
 
@@ -68,6 +66,12 @@ def transfer(request):
             return render(request, template_name, {"error": "Account Number does not match with any customer."})
     else:
         return render(request, template_name)
+
+
+def transactions(request):
+    data = Transaction.objects.all()
+    context = {"transactions": data}
+    return render(request, "transactions.html", context)
 
 
 def sponsor(request):

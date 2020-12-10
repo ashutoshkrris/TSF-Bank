@@ -1,0 +1,50 @@
+{% extends 'base.html' %}{% load static %} {% block title %}Customers | TSF
+World Bank{% endblock %} {% block content %}
+
+<div class="inner-banner"></div>
+<section class="w3l-breadcrumb">
+  <div class="container">
+    <ul class="breadcrumbs-custom-path">
+      <li><a href="{% url 'home' %}">Home</a></li>
+      <li>
+        <span class="fa fa-arrow-right mx-2" aria-hidden="true"></span>
+        <a href="{% url 'transfer' %}">Transfer</a>
+      </li>
+      <li class="active">
+        <span class="fa fa-arrow-right mx-2" aria-hidden="true"></span>
+        All Transactions
+      </li>
+    </ul>
+  </div>
+</section>
+
+<section class="w3l-team py-5" id="team">
+  <div class="container py-lg-5 py-md-4 py-2">
+    <h3 class="title-big mb-md-5 mb-4 text-center">Transactions Record</h3>
+    <table class="table table-striped text-center">
+      <thead>
+        <tr>
+          <th scope="col">Debited From</th>
+          <th scope="col">Credit To</th>
+          <th scope="col">Amount</th>
+          <th scope="col">Transaction ID</th>
+          <th scope="col">Date</th>
+          <th scope="col">Status</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for transaction in transactions %}
+        <tr>
+          <td>{{transaction.debited_from.name}}</td>
+          <td>{{transaction.credited_to.name}}</td>
+          <td>{{transaction.amount}}</td>
+          <td>{{transaction.transaction_id}}</td>
+          <td>{{transaction.transaction_date}}</td>
+          <td>{{transaction.transaction_status}}</td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+</section>
+{% endblock %}

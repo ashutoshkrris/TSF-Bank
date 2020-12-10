@@ -18,7 +18,29 @@ TSF World Bank{% endblock %} {% block content %}
   </div>
 </section>
 
-<section class="w3l-team py-5" id="team">
+<div class="row mx-auto pt-4">
+  <div class="card mx-auto" style="width: 18rem;">
+    <img src="{{customer.image.url}}" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title text-center">{{customer.name}}</h5>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item text-center">
+        <p class="card-text"><small class="text-muted">Email address</small></p>
+        {{customer.email}}
+      </li>
+      <li class="list-group-item text-center"><p class="card-text"><small class="text-muted">Contact Number</small></p>{{customer.phone}}</li>
+      <li class="list-group-item text-center"><p class="card-text"><small class="text-muted">Account Number</small></p>{{customer.account_number}}</li>
+      <li class="list-group-item text-center"><p class="card-text"><small class="text-muted">Account Branch</small></p>{{customer.account_branch}}</li>
+      <li class="list-group-item text-center"><p class="card-text"><small class="text-muted">IFSC Code</small></p>{{customer.account_branch_ifsc}}</li>
+      <li class="list-group-item text-center"><p class="card-text"><small class="text-muted">Account Balance</small></p> ₹ {{customer.account_balance}}</li>
+      <li class="list-group-item text-center"><p class="card-text"><small class="text-muted">Customer Since</small></p>{{customer.created_at}}</li>
+    </ul>
+  </div>
+</div>
+
+
+<!-- <section class="w3l-team py-5" id="team">
   <div class="container py-lg-5 py-md-4 py-2">
     <h3 class="title-big mb-md-5 mb-4 text-center">Meet {{customer.name}}</h3>
     <div class="row">
@@ -29,6 +51,7 @@ TSF World Bank{% endblock %} {% block content %}
               src="{{customer.image.url}}"
               alt="team member"
               class="img-fluid radius-image"
+              style="margin-left: auto;margin-right: auto;"
             />
           </div>
           <!-- <div class="content">
@@ -40,7 +63,7 @@ TSF World Bank{% endblock %} {% block content %}
               <li><a href="#" class="fa fa-linkedin"></a></li>
             </ul>
           </div> -->
-        </div>
+        <!-- </div>
       </div>
       <div class="col-md-8 col-sm-6">
         <ul>
@@ -56,5 +79,5 @@ TSF World Bank{% endblock %} {% block content %}
       </div>
     </div>
   </div>
-</section>
+</section> --> -->
 {% endblock %}
