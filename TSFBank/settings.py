@@ -38,8 +38,10 @@ INSTALLED_APPS = [
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
+    'cloudinary_storage',
     'django.contrib.staticfiles',
-    'core'
+    'core',
+    'cloudinary',
 ]
 
 MIDDLEWARE = [
@@ -134,3 +136,10 @@ STATICFILES_DIRS = [BASE_DIR / 'static']
 
 MEDIA_URL = '/customers/images/'
 MEDIA_ROOT = BASE_DIR
+
+CLOUDINARY_STORAGE = {
+    'CLOUD_NAME': 'hffs2ny9n',
+    'API_KEY': '727749715453349',
+    'API_SECRET': 'm2Doyco7U6Ti7TUlBzZo8guZc1U',
+}
+DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
